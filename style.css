@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+   
+    border-bottom: 5px solid black
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
