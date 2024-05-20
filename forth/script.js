@@ -24,7 +24,7 @@ const ages = document.querySelectorAll(".age");
 const genters = document.querySelectorAll(".gender");
 
 users.forEach(function (user) {
-    let html = `<div class="usercards">
+    let html = `<div class="userContainer">
     <h1 class="name">이름 : ${user.이름}</h1>
     <P class="age">나이 : ${user.나이}</P>
     <P class="gender">성별 : ${user.성별}</P>
