@@ -80,9 +80,26 @@ const 튜터님 = {
 // console.log(나이);
 // console.log(주소);
 
+// //문제8-----------------------------------------------------------------
+
+// localStorage.setItem("튜터님", JSON.stringify(튜터님));
+
+// const 튜타 = JSON.parse(localStorage.getItem("튜터님"));
+
+// console.log(튜타);
+
+//변경 -> 저장 -----------------------------------------------------------------
+
 localStorage.setItem("튜터님", JSON.stringify(튜터님));
 
-const 튜타 = JSON.parse(localStorage.getItem("튜터님"));
+console.log(JSON.parse(localStorage.getItem("튜터님")));
 
-console.log(튜타);
+localStorage.setItem("튜터님", JSON.stringify({...튜터님, 나이: 30}));
 
+
+
+//삭제 -----------------------------------------------------------------
+
+localStorage.removeItem("튜터님");
+
+console.log(JSON.parse(localStorage.getItem("튜터님")))
